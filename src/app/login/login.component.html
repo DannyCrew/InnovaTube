@@ -1,0 +1,21 @@
+<div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm">
+      <div>
+        <input id="username" formControlName="username" placeholder="Username or Email" type="text" required />
+      </div>
+      <div>
+        <input id="password" formControlName="password" placeholder="Password" type="password" required />
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+      <div>
+        <button routerLink="/register">Register</button>
+      </div>
+      <div>
+        <a routerLink="/forgot-pass">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+  
